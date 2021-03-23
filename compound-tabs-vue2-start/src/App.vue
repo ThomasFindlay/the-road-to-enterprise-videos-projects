@@ -1,38 +1,28 @@
 <template>
   <div id="app">
-    <Tabs initial-active-tab="profile">
-      <div :class="$style.section">
-        <Tab id="home">Home</Tab>
-        <Tab id="profile">Profile</Tab>
-        <Tab id="settings">Settings</Tab>
-        <Tab id="about">About </Tab>
-      </div>
-      <div :class="$style.section">
-        <TabPanel id="home">Home panel</TabPanel>
-        <TabPanel id="profile">Profile panel</TabPanel>
-        <TabPanel id="settings">Settings panel</TabPanel>
-        <TabPanel id="about">About panel</TabPanel>
-      </div>
-    </Tabs>
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <HelloWorld msg="Welcome to Your Vue.js App" />
   </div>
 </template>
 
 <script>
-import { Tabs, Tab, TabPanel } from '@/components/tab'
+import HelloWorld from './components/HelloWorld.vue'
+
 export default {
   name: 'App',
   components: {
-    Tabs,
-    Tab,
-    TabPanel,
+    HelloWorld,
   },
 }
 </script>
 
-<style module>
-.section {
-  display: flex;
-  justify-content: center;
-  margin: 2rem;
+<style lang="scss">
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
 }
 </style>
