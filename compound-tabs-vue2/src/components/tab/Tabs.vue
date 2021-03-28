@@ -1,3 +1,8 @@
+<template>
+  <div>
+    <slot />
+  </div>
+</template>
 <script>
 export default {
   props: {
@@ -21,9 +26,6 @@ export default {
       tabState,
       activateTab: this.activateTab,
     }
-  },
-  render(h) {
-    return h('div', this.$scopedSlots.default())
   },
   methods: {
     activateTab(id) {
