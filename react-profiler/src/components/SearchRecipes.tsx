@@ -32,7 +32,7 @@ const SearchRecipes = (props: SearchRecipesProps) => {
       const data = await fetch('/data/recipes.json').then((res) => res.json())
       console.log('data', data)
 
-      setRecipes(data.slice(0, 2000))
+      setRecipes(data.slice(0, 3000))
     })()
   }, [])
   const queryLower = query.toLowerCase()
