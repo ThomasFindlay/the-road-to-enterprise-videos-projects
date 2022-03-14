@@ -1,5 +1,4 @@
 import { Recipe } from '../types/recipes'
-import SearchRecipes from './SearchRecipes'
 
 type DisplayRecipesProps = {
   recipes: Recipe[]
